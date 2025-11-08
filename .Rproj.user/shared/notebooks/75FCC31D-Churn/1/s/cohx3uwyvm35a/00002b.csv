@@ -1,0 +1,17 @@
+"0","final.boruta <- TentativeRoughFix(boruta.train)"
+"0","print(final.boruta)"
+"1","Boruta performed 10 iterations in 54.57923 secs.
+"
+"1"," 7 attributes confirmed important: averagemontlyhours, lastevaluation,
+"
+"1","numberproject, promotionlast5years, satisfactionlevel and 2 more;
+"
+"1"," No attributes deemed unimportant.
+"
+"0","boruta.df <- attStats(final.boruta)"
+"0","class(boruta.df)"
+"1","[1]"
+"1"," ""data.frame"""
+"1","
+"
+"0","print(boruta.df)"

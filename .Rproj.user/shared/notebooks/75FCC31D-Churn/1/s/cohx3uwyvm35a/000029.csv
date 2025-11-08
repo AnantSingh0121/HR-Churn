@@ -1,0 +1,4 @@
+"0","lz<-lapply(1:ncol(boruta.train$ImpHistory),function(i) boruta.train$ImpHistory[is.finite(boruta.train$ImpHistory[,i]),i])"
+"0","names(lz) <- colnames(boruta.train$ImpHistory)"
+"0","Labels <- sort(sapply(lz,median))"
+"0","axis(side = 1,las=2,labels = names(Labels), at = 1:ncol(boruta.train$ImpHistory), cex.axis = 0.7)"

@@ -1,0 +1,8 @@
+"0","logitAuc <- performance(logitScores, ""auc"")"
+"0","as.numeric(logitAuc@y.values)"
+"1","[1]"
+"1"," 0.8129479"
+"1","
+"
+"0","logitLift <- performance(logitScores, measure=""lift"", x.measure=""rpp"")"
+"0","plot(logitLift, main=""Lift Chart"", xlab=""% Population"", ylab=""Lift"", col=""darkblue"", lwd=3)"

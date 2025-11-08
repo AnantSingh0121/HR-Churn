@@ -1,0 +1,33 @@
+"0","install.packages(""Boruta"", dependencies=TRUE)"
+"2","WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.5/mlbench_2.1-6.zip'
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.5/rFerns_5.0.0.zip'
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.5/Boruta_9.0.0.zip'
+"
+"1","package ‘mlbench’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rFerns’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘Boruta’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\Anant Singh\AppData\Local\Temp\RtmpCUIq3B\downloaded_packages"
+"1",""
+"1","
+"
+"0","library(Boruta)"
+"0","K_Means_Data <- read.csv(""HR_comma.csv"", header = T, stringsAsFactors = F)"
+"0","normalize <- function(x) {"
+"0"," return ((x - min(x)) / (max(x) - min(x)))"
+"0","}"
+"0","DF=data.frame(K_Means_Data)"
+"0","K_Means_Data <- as.data.frame(lapply(DF[1:8], normalize))"
+"0","K_Means_Data"

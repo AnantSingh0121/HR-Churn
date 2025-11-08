@@ -1,0 +1,5 @@
+"0","predTree <- predict(classTree, validation, type=""class"")"
+"0","matrix <- table(validation[,1], predTree)"
+"0","missClass <- 1 - sum(diag(matrix))/sum(matrix)"
+"0","accuracyValue <- sum(diag(matrix))/sum(matrix)"
+"0",""
